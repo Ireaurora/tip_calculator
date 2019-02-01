@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>This is your personal tip calculator</title>
+    <title>This is your personal tip calculator</title
+    <script src="tip_calculator.js"></script>
+    <style>
+      #Mybackground {
+        background-color: coral;
+      }
+    </style>
 </head>
 <body>
+<p>How much was your bill?</p>
+<p> You can now choose your background color </p>
+<button onclick="changing_bg_color()">Change now!</button>
+
+<input type="text" name="" value="" id="expense" >
 <p>How would you rate the service you received today?</p>
-<select>
+<select onchange="test(this);">
+    <option disabled selected value> -- Select an option -- </option>
     <option value="0">Perfect service </option>
     <option value="1">Good service </option>
     <option value="2">Could be improved </option>
     <option value="3">Terrible service </option>
-
-
 </select>
-<p>FINALLLY WORKING</p>
+
+
 </body>
 </html>
