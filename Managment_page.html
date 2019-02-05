@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>This is your managment page </title>
+    <title>Management page</title>
     <style>
     #selection{
       background-image:url('');
@@ -20,15 +20,23 @@
     left: 50%;
     margin-left: -512px; }
 }
+#selected_image{
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  height:200;
+  width :200;
+}
     </style>
 </head>
 <body>
   <div id="selection">
-  <h1> Welcome!</h1>
+  <h1> Welcome to the managment page!</h1>
   <button onclick="window.location.href='tip_calculator.html'">Go to the client page now</button>
-  <button onclick="">Go to the managment page now!</button>
+
   <input type="file"  id="background" name="background-image" onchange="previewFile()"><br>
-  <img src="" height="200" alt="Image preview...">
+
+  <img src="" id="selected_image" height="200" width ="200" alt="Image preview...">
 <script>
 //allowing user to preview the photo
 function previewFile(){
