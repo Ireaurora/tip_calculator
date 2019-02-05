@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>This is your managment page </title>
+    <style>
+    #selection{
+      background-image:url('');
+   background-size:cover;
+   background-position: center;
+ }
+    </style>
 </head>
 <body>
+  <div id="selection">
   <h1> Welcome!</h1>
   <button onclick="window.location.href='tip_calculator.html'">Go to the client page now</button>
   <button onclick="">Go to the managment page now!</button>
-  <input type="file" onchange="previewFile()"><br>
+  <input type="file"  id="background" name="background-image" onchange="previewFile()"><br>
   <img src="" height="200" alt="Image preview...">
 <script>
-//allowing user to load a photo
+//allowing user to preview the photo
 function previewFile(){
        var preview = document.querySelector('img'); //selects the query named img
        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
@@ -26,9 +34,21 @@ function previewFile(){
            preview.src = "";
        }
   }
+   previewFile();//calls the function named previewFile()
 
-  previewFile();  //calls the function named previewFile()
- alert(file);
+document.getElementById('background').addEventListener('change', readURL, true);
+function readURL(){
+  var file1 = document.getElementById("background").files[0];
+  var reader1 = new FileReader();
+  reader1.onloadend = function(){
+     document.getElementById('selection').style.backgroundImage = "url(" + reader1.result + ")";
+  }
+  if(file1){
+     reader1.readAsDataURL(file1);
+   }else{
+   }
+}
 </script>
+</div>
 </body>
 </html>
