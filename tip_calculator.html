@@ -6,8 +6,8 @@
     <script src="tip_calculator.js" type = "text/javascript"></script>
 </head>
 <body id="Mybackground">
-<p> You can now choose your background color </p>
-<button onclick="changing_bg_color()">Change now!</button>
+  <section align="center">
+
 <p>How much was your bill?</p>
 <input type="text" name="" value="" id="expense" >
 <p>How would you rate the service you received today?</p>
@@ -23,48 +23,18 @@
 <button onclick="tip_calculation()"> Go !</button>
 
 <p> You should tip your waiter/waitress this: </p>
+</section>
 
 <script>
 // initially we can change the color of the background
-function changing_bg_color(){
-  document.getElementById("Mybackground").style.backgroundColor = "lightblue";
-}
 var expense_tip = 0;
 // This is the function that does the actual calulation based on the expense
 function tip_calculation() {
 let x = document.getElementById("expense").value;
+var tip = 0.10*x;
+alert(tip);
 //implementing a case statement to group the expense in a level
-switch (x) {
-  case 1 : (x < 10) {
-    expense_tip = 2;
-    return 1;
-  }case 2 : (x < 20 ){
-    return 2;
-  }case 3 : (x < 30) {
-    return 3;
-  }case 4: (x < 50 ) {
-    return 4;
-  }case 5 : (x < 70) {
-    return 5;
-  }case 6: (x < 100){
-    return 6;
-  }case 7: (x > 100){
-    return 7;
-  }
-}
 
-
-}
-
-window.test = function(e) {
-    if (e.value === "0") {
-        alert(e.value);
-
-
-    } else if (e.value === '1') {
-        alert(e.value);
-
-    }
 }
 </script>
 
