@@ -6,7 +6,7 @@
 }
 
 #selection{
-  background-position: center;
+  background:no-repeat fixed center ;
   min-height: 100%;
   min-width: 1024px;
   width: 100%;
