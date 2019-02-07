@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="tip_styles.css">
+  <script src="tip_calculator.js" type = "text/javascript"></script>
+
     <title>Management page</title>
     <style>
     #selection{
@@ -15,10 +17,10 @@
   <h1> Welcome to the managment page!</h1>
   <button onclick="window.location.href='tip_calculator.html'">Go to the client page now</button>
   <input type="file"  id="background" name="background-image" onchange="previewFile()"><br>
-
+<button onclick="function1()"></button>
   <img src="" id="selected_image" height="200" width ="200" alt="Image preview...">
+</div>
 <script>
-//allowing user to preview the photo
 function previewFile(){
        var preview = document.querySelector('img'); //selects the query named img
        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
@@ -33,9 +35,9 @@ function previewFile(){
            preview.src = "";
        }
   }
-   previewFile();//calls the function named previewFile()
-
+previewFile();//calls the function named previewFile()
 document.getElementById('background').addEventListener('change', readURL, true);
+
 function readURL(){
   var file1 = document.getElementById("background").files[0];
   var reader1 = new FileReader();
@@ -47,9 +49,7 @@ function readURL(){
    }else{
    }
 }
-
-readURL(); // this allows the background to remain set even when you go to another page
+readURL();
 </script>
-</div>
 </body>
 </html>
