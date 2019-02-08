@@ -12,8 +12,13 @@
    }
       </style>
 </head>
-<body onload="myfunction()">
-  <div id="myid"align="center">
+<body>
+  <section>
+    <p>Start the set-up for your tip calculator!</p>
+    <p>Note: You'll only need to do this once!</p>
+    <input type="file"  id="background" name="background-image" onchange="previewFile()"><br>
+  </section>
+  <div id="selection"align="center">
 <a id="bottom"></a>
 <p>How much was your bill?</p>
 <input type="text" name="" value="" id="expense" >
@@ -42,7 +47,20 @@ var tip = 0.10*x;
 alert(tip);
 //implementing a case statement to group the expense in a level
 }
+document.getElementById('background').addEventListener('change', readURL, true);
 
+function readURL(){
+  var file1 = document.getElementById("background").files[0];
+  var reader1 = new FileReader();
+  reader1.onloadend = function(){
+     document.getElementById('selection').style.backgroundImage = "url(" + reader1.result + ")";
+  }
+  if(file1){
+     reader1.readAsDataURL(file1);
+   }else{
+   }
+}
+readURL();
 </script>
 
 
