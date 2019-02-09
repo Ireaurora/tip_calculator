@@ -21,7 +21,7 @@
   <div id="selection"align="center">
 <a id="bottom"></a>
 <p>How much was your bill?</p>
-<input type="text" name="" value="" id="expense" >
+<input type="text" name="" value="" id="expense">
 <p>How would you rate the service you received today?</p>
 <select onchange="test(this);">
     <option disabled selected value> -- Select an option -- </option>
@@ -32,7 +32,7 @@
 </select>
 <p>How many people were at your table today?</p>
 <input type="text" name="" value="" id="people" >
-<button onclick="tip_calculation()" > Go !</button>
+<button onclick="restart()" > Go !</button>
 <p> You should leave a tip of: </p>
 <input type="text" name="" value="" id="result">
 
@@ -40,13 +40,16 @@
 </div>
 
 <script>
+function restart(){
+    document.getElementById("expense").value ="";
 // initially we can change the color of the background
 var expense_tip = 0;
 // This is the function that does the actual calulation based on the expense
 function tip_calculation() {
 let x = document.getElementById("expense").value;
 var tip = 0.10*x;
-alert(tip);
+document.getElementById("mytext_to").value = tip;
+
 //implementing a case statement to group the expense in a level
 }
 document.getElementById('background').addEventListener('change', readURL, true);
@@ -63,6 +66,7 @@ function readURL(){
    }
 }
 readURL();
+
 </script>
 
 
