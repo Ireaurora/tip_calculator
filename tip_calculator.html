@@ -32,22 +32,17 @@
 </select>
 <p>How many people were at your table today?</p>
 <input type="text" name="" value="" id="people" >
-<button onclick="restart()" > Go !</button>
+<button onclick="tip_calculation()" > Go !</button>
 <p> You should leave a tip of: </p>
 <input type="text" name="" value="" id="result">
 
 </div>
 
 <script>
-function restart(){
-    document.getElementById("expense").value ="";
-    tip_calculation();
-  }
 // initially we can change the color of the background
-var expense_tip = 0;
 // This is the function that does the actual calulation based on the expense
 function tip_calculation() {
-let x = document.getElementById("expense").value;
+var x = document.getElementById("expense").value;
 var tip = 0.10*x;
 document.getElementById("result").value = tip;
 
