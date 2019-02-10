@@ -36,7 +36,6 @@
 <p> You should leave a tip of: </p>
 <input type="text" name="" value="" id="result">
 
-<p> You should tip your waiter/waitress this: </p>
 </div>
 
 <script>
@@ -48,7 +47,7 @@ var expense_tip = 0;
 function tip_calculation() {
 let x = document.getElementById("expense").value;
 var tip = 0.10*x;
-document.getElementById("mytext_to").value = tip;
+document.getElementById("result").value = tip;
 
 //implementing a case statement to group the expense in a level
 }
