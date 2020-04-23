@@ -17,6 +17,7 @@ function tip_calculation() {
         var reader1 = new FileReader();
         reader1.onloadend = function(){
            document.getElementById('section').style.backgroundImage = "url(" + reader1.result + ")";
+           document.getElementById('background').style.display ="none";
         }
         if(file1){
            reader1.readAsDataURL(file1);
