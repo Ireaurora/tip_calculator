@@ -7,6 +7,7 @@ function increasing_customer_satisfaction(){
   }
 
 function tip_calculation() {
+  //this is to be substituted with the formula required by the customer
     var x = document.getElementById("expense").value;
     var tip = 0.10*x;
     document.getElementById("result").value = tip;
@@ -19,10 +20,7 @@ function tip_calculation() {
            document.getElementById('section').style.backgroundImage = "url(" + reader1.result + ")";
            document.getElementById('background').style.display ="none";
         }
-        if(file1){
-           reader1.readAsDataURL(file1);
-         }else{
-         }
+        if(file1){reader1.readAsDataURL(file1);}
       }
       readURL();
 
