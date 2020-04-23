@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is your personal tip calculator</title>
       <link rel="stylesheet" href="tip_style.css">
       <script src ="tip_calculator.js" type ="text/javascript"></script>
 </head>
 <body>
-  <section align="center">
-    <p>Start the set-up for your tip calculator!</p>
-    <input type="file" id="background" name="background-image"><br>
-  </section>
-  <div id="selection"align="center">
-<a id="bottom"></a>
-<p>How much was your bill?</p>
-<input type="text" name="" value="" id="expense">
-<p>How would you rate the service you received today?</p>
-<select onchange="test(this);">
+<h1>Choose a background for your tip calculator</h1>
+<div class="section">
+  <h2>How much was your bill?</h2>
+  <input type="text" id="expense">
+
+  <h2>How would you rate the service you received today?</h2>
+  <select onchange="test(this);">
     <option disabled selected value> -- Select an option -- </option>
     <option value="0">Perfect service </option>
     <option value="1">Good service </option>
     <option value="2">Could be improved </option>
     <option value="3">Terrible service </option>
-</select>
-<p>How many people were at your table today?</p>
-<input type="text" id="people" >
-<button type="submit" onclick="tip_calculation()" >Calculate my tip</button>
-<p> You should leave a tip of: </p>
-<input type="text" name="" value="" id="result">
+  </select>
+
+  <h2>How many people were at your table today?</h2>
+    <input type="text" id="people" >
+    <button onclick="tip_calculation()" >Calculate my tip</button>
+  <h2> You should leave a tip of: </h2>
+    <input type="text" id="result">
 </div>
+<footer>
+  <p>Hello</p>
+  <input type="file" id="background" name="background-image"><br>
+</footer>
 <script> document.getElementById('background').addEventListener('change', readURL, true);</script>
 </body>
 </html>
