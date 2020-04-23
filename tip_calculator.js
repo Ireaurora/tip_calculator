@@ -17,8 +17,7 @@ function tip_calculation() {
     }
    
     function readURL(){
-        var file1 = document.getElementById("background").files[0];
-        console.log(file1);
+        const file1 = document.getElementById("background").files[0];
         var reader1 = new FileReader();
         reader1.onloadend = function(){
            document.getElementById('selection').style.backgroundImage = "url(" + reader1.result + ")";
@@ -30,4 +29,19 @@ function tip_calculation() {
       }
       readURL();
  
-    
+
+      function previewFile(){
+        var preview = document.querySelector('img'); //selects the query named img
+        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+        var reader  = new FileReader();
+ 
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+        if (file) {
+            reader.readAsDataURL(file); //reads the data as a URL
+        } else {
+            preview.src = "";
+        }
+   }
+ previewFile();

@@ -2,54 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="tip_styles.css">
+  <link rel="stylesheet" href="tip_style.css">
   <script src="tip_calculator.js" type = "text/javascript"></script>
-
     <title>Management page</title>
-    <style>
-    #selection{
-      background-image:url('');
- }
-    </style>
+
 </head>
 <body>
-  <div id="selection"align="center">
+  <div id="selection">
   <h1> Welcome to the managment page!</h1>
-  <button onclick="window.location.href='tip_calculator.html'">Go to the client page now</button>
+  <button type="submit" onclick="window.location.href='tip_calculator.html'">Go to the client page now</button>
   <input type="file"  id="background" name="background-image" onchange="previewFile()"><br>
-<button onclick="function1()"></button>
+  <button type="submit" onclick="function1()"></button>
   <img src="" id="selected_image" height="200" width ="200" alt="Image preview...">
 </div>
 <script>
-function previewFile(){
-       var preview = document.querySelector('img'); //selects the query named img
-       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
-       var reader  = new FileReader();
-
-       reader.onloadend = function () {
-           preview.src = reader.result;
-       }
-       if (file) {
-           reader.readAsDataURL(file); //reads the data as a URL
-       } else {
-           preview.src = "";
-       }
-  }
-previewFile();//calls the function named previewFile()
 document.getElementById('background').addEventListener('change', readURL, true);
-
-function readURL(){
-  var file1 = document.getElementById("background").files[0];
-  var reader1 = new FileReader();
-  reader1.onloadend = function(){
-     document.getElementById('selection').style.backgroundImage = "url(" + reader1.result + ")";
-  }
-  if(file1){
-     reader1.readAsDataURL(file1);
-   }else{
-   }
-}
-readURL();
 </script>
 </body>
 </html>
