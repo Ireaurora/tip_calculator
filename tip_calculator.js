@@ -20,7 +20,7 @@ function tip_calculation() {
         const file1 = document.getElementById("background").files[0];
         var reader1 = new FileReader();
         reader1.onloadend = function(){
-           document.getElementById('selection').style.backgroundImage = "url(" + reader1.result + ")";
+           document.getElementById('section').style.backgroundImage = "url(" + reader1.result + ")";
         }
         if(file1){
            reader1.readAsDataURL(file1);

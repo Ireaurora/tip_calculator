@@ -1,24 +1,9 @@
-@media screen and (max-width: 1024px){
-    img.bg {
-    left: 50%;
-    margin-left: -512px; }
+#section{
+  background-image:url('');
 }
-
-#selection{
-  background:no-repeat fixed center ;
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 
 div {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
   }
 
