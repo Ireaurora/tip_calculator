@@ -7,7 +7,7 @@
       <script src ="tip_calculator.js" type ="text/javascript"></script>
 </head>
 <body>
-<h1>Choose a background for your tip calculator</h1>
+<h1>Welcome to your tip calculator</h1>
 <div id="section">
   <h2>How much was your bill?</h2>
   <input type="text" id="expense">
@@ -28,7 +28,10 @@
 </div>
 <footer>
   <p>Hello</p>
-  <input type="file" id="background" name="background-image"><br>
+  <span id="customizablepart">
+    <p>Choose a background picture : 
+    <input type="file" id="background" class="custom-file-input" name="background-image"><br></p>
+  </span>
 </footer>
 <script> document.getElementById('background').addEventListener('change', readURL, true);</script>
 </body>
