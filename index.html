@@ -7,7 +7,10 @@
       <script src ="tip_calculator.js" type ="text/javascript"></script>
 </head>
 <body>
-<h1>Welcome to your tip calculator</h1>
+  <header>
+    <div id="logo"></div>    
+      <h1>Welcome to your tip calculator</h1>
+  </header>
 <div id="section">
   <h2>How much was your bill?</h2>
   <input type="text" id="expense">
@@ -29,10 +32,17 @@
 <footer>
   <p>Hello</p>
   <span id="customizablepart">
+    <p>Customise your tip calculator: </p>
+    <p>Insert your logo: 
+      <input type="file" id="chooselogo" class="custom-file-input" name="logo-image"><br></p>
+    </p>
     <p>Choose a background picture : 
     <input type="file" id="background" class="custom-file-input" name="background-image"><br></p>
   </span>
 </footer>
-<script> document.getElementById('background').addEventListener('change', readURL, true);</script>
+<script> 
+document.getElementById('background').addEventListener('change', readURL, true);
+document.getElementById('chooselogo').addEventListener('change', readURL, true);
+</script>
 </body>
 </html>

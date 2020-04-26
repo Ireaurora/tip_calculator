@@ -1,8 +1,28 @@
 #section{ background-image:url('');}
-h1{ text-align:center; }
+
+#logo{ background-image:url('');
+}
+
+header #logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+}
+
+header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+header{
+  height: 110px;
+}
+
+
 body{ background-color: #eae7dc;}
  
-div {
+#section {
     border-radius: 5px;
     padding: 20px;
 }
@@ -12,7 +32,7 @@ input[type=text], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #ea8074;
   border-radius: 4px;
   box-sizing: border-box;
 }
