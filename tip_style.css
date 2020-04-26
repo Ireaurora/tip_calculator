@@ -1,13 +1,11 @@
-#section{ background-image:url('');}
-
-#logo{ background-image:url('');
-}
+body{ background-color: #eae7dc;}
 
 header #logo {
   float: left;
   width: 100px;
   height: 100px;
   background: #ccc;
+  background-image:url('')
 }
 
 header h1 {
@@ -15,16 +13,12 @@ header h1 {
   top: 18px;
   left: 10px;
 }
-header{
-  height: 110px;
-}
-
-
-body{ background-color: #eae7dc;}
+header{ height: 110px;}
  
 #section {
     border-radius: 5px;
     padding: 20px;
+    background-image:url('');
 }
 
 input[type=text], select {
@@ -56,6 +50,4 @@ footer {
   background-color: #ea8074;
   color: white;
   text-align: center;
-  padding: 5px;
-  padding-bottom:14px;
 }
