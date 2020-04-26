@@ -7,7 +7,7 @@ header #logo {
   float: left;
   width: 100px;
   height: 100px;
-  background: #555;
+  background: #ccc;
 }
 
 header h1 {
@@ -32,7 +32,7 @@ input[type=text], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #ea8074;
   border-radius: 4px;
   box-sizing: border-box;
 }
