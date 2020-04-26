@@ -1,8 +1,28 @@
 #section{ background-image:url('');}
-h1{ text-align:center; }
+
+#logo{ background-image:url('');
+}
+
+header #logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+header{
+  height: 110px;
+}
+
+
 body{ background-color: #eae7dc;}
  
-div {
+#section {
     border-radius: 5px;
     padding: 20px;
 }
