@@ -1,4 +1,10 @@
-body{ background-color: #eae7dc;}
+body{ 
+  background-color: #eae7dc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  }
 
 header #logo {
   float: left;
@@ -7,13 +13,16 @@ header #logo {
   background: #ccc;
   background-image:url('')
 }
+header{ 
+  height: 110px;
+  background-color: white;
+}
 
 header h1 {
   position: relative;
   top: 18px;
   left: 10px;
 }
-header{ height: 110px;}
  
 #section {
     border-radius: 5px;
