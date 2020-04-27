@@ -11,6 +11,24 @@ function tip_calculation() {
   //this is to be substituted with the formula required by the customer
   var x = document.getElementById("expense").value;
   var tip = 0.10*x;
+  var e = document.getElementById("selectBox");
+  var strUser = e.options[e.selectedIndex].value;
+  switch(strUser) {
+    case '0':
+      console.log(tip);
+      break;
+    case '1':
+      tip += 0.40;
+      break;
+    case '2':
+      tip += 0.30;
+      break;
+    case '3':
+      tip += 0.20;
+      break;
+    default:
+      tip += 0.10;
+  }
   document.getElementById("result").value = tip;
 }
    
