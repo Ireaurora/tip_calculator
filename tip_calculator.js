@@ -29,6 +29,9 @@ function tip_calculation() {
     default:
       tip += 0.10;
   }
+  console.log(tip);
+  tip = tip.toFixed(2);
+  console.log(tip);
   document.getElementById("result").value = tip;
 }
    
