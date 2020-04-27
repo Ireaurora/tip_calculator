@@ -1,5 +1,6 @@
 body{ 
   background-color: #eae7dc;
+  font-family : "Lucida Console";
 }
 * {
   margin: 0;
@@ -10,18 +11,21 @@ header #logo {
   float: left;
   width: 100px;
   height: 100px;
-  background: #ccc;
+  background:white;
   background-image:url('')
 }
 header{ 
-  height: 110px;
+  height: 100px;
   background-color: white;
+  border-bottom: 5px solid gold;
 }
 
 header h1 {
   position: relative;
   top: 18px;
   left: 10px;
+  line-height: 2;
+  text-transform: uppercase;
 }
  
 #section {
