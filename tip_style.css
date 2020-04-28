@@ -1,5 +1,5 @@
 body{ 
-  background-color: #eae7dc;
+  background-color: #ffd70017;
   font-family : "Lucida Console";
 }
 * {
@@ -47,20 +47,26 @@ input[type=text], select {
 button {
   width: 100%;
   background-color: #ea8074;
+  border: 1px solid #ea8074;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border-radius: 4px;
   cursor: pointer;
 } 
-button:hover { background-color: #ea8074;}
+button:hover { 
+  background-color: gold;
+  border: 1px solid gold;
+  color: black;
+}
   
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ea8074;
-  color: white;
+  background-color: white;
+  border-top: 5px solid gold;
   text-align: center;
+  padding:15px;
 }
