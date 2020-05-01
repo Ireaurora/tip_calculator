@@ -1,6 +1,8 @@
 body{ 
   background-color: #ffd70017;
   font-family : "Lucida Console";
+  margin-bottom: 110px;
+  clear: both;
 }
 * {
   margin: 0;
@@ -18,13 +20,12 @@ header{
   height: 100px;
   background-color: white;
   border-bottom: 5px solid gold;
+  padding:10px;
 }
 
 header h1 {
   position: relative;
-  top: 18px;
-  left: 10px;
-  line-height: 2;
+  line-height: 3;
   text-transform: uppercase;
 }
  
@@ -69,4 +70,12 @@ footer {
   border-top: 5px solid gold;
   text-align: center;
   padding:15px;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    position: relative;
+    line-height: inherit;
+    text-transform: uppercase;
+  }
 }
