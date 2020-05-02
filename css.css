@@ -21,7 +21,6 @@ header #logo {
   float: left;
   width: 100px;
   height: 100px;
-  background-image: url("");
 }
 
 header h1 {
@@ -33,7 +32,6 @@ header h1 {
 #section {
   border-radius: 5px;
   padding: 20px;
-  background-image: url("");
 }
 
 input[type=text], select {

@@ -36,22 +36,19 @@ function tip_calculation() {
 function readURL(){
     const file1 = document.getElementById("background").files[0];
     var reader1 = new FileReader();
-    reader1.onloadend = function(){
-      document.getElementById('section').style.backgroundImage = "url(" + reader1.result + ")";
-    }
-    if(file1){reader1.readAsDataURL(file1);}
-
     const file2 = document.getElementById("chooselogo").files[0];
-    console.log(file2);
     var reader2 = new FileReader();
-    reader2.onloadend = function(){
-      document.getElementById('logo').style.backgroundImage = "url(" + reader2.result + ")";
-    }
-    if(file2){reader2.readAsDataURL(file2);}
+      reader1.onloadend = function(){
+        document.getElementById('section').style.backgroundImage = "url(" + reader1.result + ")";
+      }      
+      reader2.onloadend = function(){
+        document.getElementById('logo').style.backgroundImage = "url(" + reader2.result + ")";
+      }
+      if(file1){reader1.readAsDataURL(file1);}
+      if(file2){reader2.readAsDataURL(file2);}
+      if((file1 && file2) != null){document.getElementById('customizablepart').style.display ="none";}
+      
 
-    if((file1 && file2) != null){
-      document.getElementById('customizablepart').style.display ="none";
-    }
 }
 readURL();
 
