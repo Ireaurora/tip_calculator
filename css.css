@@ -80,4 +80,15 @@ footer {
     text-transform: uppercase;
   }
 }
+
+#github {
+  padding-right: 30px;
+  font-size: 20px !important;
+  color: #f1d01f;
+  padding-bottom: 5px;
+}
+
+#github:hover {
+  color: #ea8074;
+}
 /*# sourceMappingURL=css.css.map */

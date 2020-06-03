@@ -78,3 +78,12 @@ body{
       text-transform: uppercase;
     }
   }
+  #github{
+    padding-right: 30px;
+    font-size: 20px !important;
+    color: #f1d01f;
+    &:hover{
+      color: $salmon;
+    }
+    padding-bottom:5px;
+  }
