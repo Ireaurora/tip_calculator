@@ -39,7 +39,7 @@ function readURL(){
     const file2 = document.getElementById("chooselogo").files[0];
     var reader2 = new FileReader();
       reader1.onloadend = function(){
-        document.getElementById('section').style.backgroundImage = "url(" + reader1.result + ")";
+        document.getElementsByTagName("BODY")[0].style.backgroundImage = "url(" + reader1.result + ")";
       }      
       reader2.onloadend = function(){
         document.getElementById('logo').style.backgroundImage = "url(" + reader2.result + ")";

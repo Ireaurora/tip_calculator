@@ -1,7 +1,8 @@
 body {
   background-color: #ffd70017;
   font-family: "Lucida Console";
-  margin-bottom: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
   clear: both;
 }
 
