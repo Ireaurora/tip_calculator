@@ -6,3 +6,5 @@
 
 🍦 🍲 🥪They can also choose a background picture to personalise their tip calculator 🍕 🍟 🍔
 
+---- This app is meant for tablets/iPads usage ----
+
